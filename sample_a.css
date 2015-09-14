@@ -78,9 +78,10 @@ div#footer	{color: #ffffff;
 	padding-top: 8px;
 	padding-bottom: 8px}
 
-address	{font-size: 0.75em;
+small	{font-size: 0.75em;
 	font-style: normal;
-	text-align: center}
+	text-align: center;
+	display: block;}
 
 
 /* 画像の配置 */
