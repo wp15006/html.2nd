@@ -22,6 +22,8 @@ header#pageheader h1	{
 	float: left;
 	font-size: 40px;
 	font-weight: normal;
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Righteous', cursive;
 }
 
 header#pageheader h2	{
@@ -41,7 +43,7 @@ nav {
 nav ul	{
 	font-size: 0.75em;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	margin-left: 0;
 	padding-left: 0;
 	height: 30px;
@@ -85,6 +87,10 @@ article header h1	{
 	font-weight: normal;
 }
 
+article section{
+	clear: both;
+}
+
 article section h1	{
 	background: none;
 	font-size: 24px;
@@ -105,9 +111,6 @@ article p	{
 	margin-right: 12px;
 }
 
-article section{
-	clear: both;
-}
 
 /* フッター */
 footer	{
@@ -116,6 +119,7 @@ footer	{
 	margin-top: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	clear: both;
 }
 
 small	{
@@ -127,7 +131,7 @@ small	{
 
 
 /* 画像の配置 */
-img.photo-odd	{
+/*img.photo-odd	{
 	float: right;
 	margin-left: 15px;
 	margin-bottom: 15px;
@@ -137,4 +141,30 @@ img.photo-even	{
 	float: left;
 	margin-right: 15px;
 	margin-bottom: 15px;
+}*/
+
+figure{
+	margin: 0;
 }
+
+article section:nth-of-type(odd) figure{
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+article section:nth-of-type(even) figure{
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+article section figcaption{
+	color: #666;
+	font-size: 10px;
+	display: block;
+}
+
+article section:nth-of-type(odd) figcaption{
+	text-align: right;
+}
+
+
